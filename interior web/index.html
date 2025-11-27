@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Interior Design Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="wanderX - Modern interior design studio. Portfolio, services, and contact."
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#"> wanderX</a>
+        <nav class="nav">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="cta" id="bookBtn">Book Consult</button>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1>Designing spaces that feel like home — with style.</h1>
+            <p>
+              We craft soulful interiors blending function, color and texture.
+              Residential and boutique commercial projects.
+            </p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+              <a href="#contact" class="btn btn-ghost">Get a Quote</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <!-- Replace with your image; using placeholder -->
+            <img
+              src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1"
+              alt="Interior preview"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Example property card -->
+<!-- <div class="property-card" data-id="1" data-name="Crestview Apartments" data-img="property.jpeg">
+  <img src="download.jpeg" alt="Crestview Apartments">
+  <h3>Crestview Apartments</h3>
+  <p>Luxury 2BHK with city view</p>
+  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+</div> -->
+
+
+      <!-- Services -->
+      <section id="services" class="section services">
+        <div class="container">
+          <h2 class="section-title">Our Services</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Residential Design</h3>
+              <p>
+                From cozy apartments to full-house renovations — we design
+                spaces for how you live.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Commercial Interiors</h3>
+              <p>
+                Boutique cafes, studios and offices with brand-forward interiors
+                and smart flow.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Color & Material Consulting</h3>
+              <p>
+                Palette selection, finishes, and sourcing suggestions to bring
+                concepts to life.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="portfolio-grid">
+            <!-- Each item: change image, title, tag -->
+            <figure class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+                alt="Project 1"
+              />
+              <figcaption>
+                <h4>Coastal Minimal Home</h4>
+                <span>Residential — 2024</span>
+              </figcaption>
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
+                alt="Project 2"
+              />
+              <figcaption>
+                <h4>Studio Renovation</h4>
+                <span>Commercial — 2023</span>
+              </figcaption>
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop"
+                alt="Project 3"
+              />
+              <figcaption>
+                <h4>Boho Apartment</h4>
+                <span>Residential — 2025</span>
+              </figcaption>
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="modern office.jpg"
+                alt="Project 4"
+              />
+              <figcaption>
+                <h4>Modern Office</h4>
+                <span>Commercial — 2024</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="before-after">
+        <h2 class="section-title">Before & After</h2>
+        <div class="ba-container">
+          <div class="ba-image-wrapper">
+            <!-- After image (bottom) -->
+            <img src="after.jpeg" alt="After Design" class="ba-image" />
+
+            <!-- Before image (top, clipped) -->
+            <div class="ba-resize">
+              <img src="before.jpeg" alt="Before Design" class="ba-image" />
+            </div>
+
+            <!-- Slider handle -->
+            <div class="ba-handle"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div>
+            <h2 class="section-title">About WanderX</h2>
+            <p>
+              I’m X — an interior designer focused on clean, tactile spaces.
+              I combine practical layouts with attention to color and materials
+              to create interiors that feel comfortable and curated.
+            </p>
+            <ul class="about-list">
+              <li>Personalized design process</li>
+              <li>Budget & timeline planning</li>
+              <li>End-to-end sourcing</li>
+            </ul>
+          </div>
+          <div class="about-photo">
+            <img
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
+              alt="Designer at work"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="style-quiz" id="styleQuiz">
+        <h2 class="section-title">Find Your Interior Style</h2>
+        <form id="quizForm" class="quiz-form">
+          <!-- Q1 -->
+          <div class="quiz-question">
+            <p>1. What colors do you love most?</p>
+            <label
+              ><input type="radio" name="q1" value="Scandinavian" required />
+              Neutral (whites, beige, light gray)</label
+            >
+            <label
+              ><input type="radio" name="q1" value="Boho" /> Earthy tones & warm
+              shades</label
+            >
+            <label
+              ><input type="radio" name="q1" value="Minimalist" /> Black & white
+              contrasts</label
+            >
+            <label
+              ><input type="radio" name="q1" value="Luxury" /> Jewel tones
+              (emerald, gold, navy)</label
+            >
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-question">
+            <p>2. Which furniture style do you prefer?</p>
+            <label
+              ><input type="radio" name="q2" value="Minimalist" required />
+              Sleek and simple</label
+            >
+            <label
+              ><input type="radio" name="q2" value="Boho" /> Vintage /
+              handcrafted</label
+            >
+            <label
+              ><input type="radio" name="q2" value="Luxury" /> Plush, statement
+              pieces</label
+            >
+            <label
+              ><input type="radio" name="q2" value="Scandinavian" /> Light wood
+              & cozy fabrics</label
+            >
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-question">
+            <p>3. What vibe do you want at home?</p>
+            <label
+              ><input type="radio" name="q3" value="Luxury" required />
+              Glamorous & elegant</label
+            >
+            <label
+              ><input type="radio" name="q3" value="Minimalist" /> Calm &
+              clutter-free</label
+            >
+            <label
+              ><input type="radio" name="q3" value="Boho" /> Free-spirited &
+              artsy</label
+            >
+            <label
+              ><input type="radio" name="q3" value="Scandinavian" /> Warm &
+              welcoming</label
+            >
+          </div>
+
+          <!-- Q4 -->
+          <div class="quiz-question">
+            <p>4. Choose a must-have item:</p>
+            <label
+              ><input type="radio" name="q4" value="Boho" required /> Plants &
+              woven rugs</label
+            >
+            <label
+              ><input type="radio" name="q4" value="Minimalist" /> Smart storage
+              units</label
+            >
+            <label
+              ><input type="radio" name="q4" value="Luxury" /> Chandelier or
+              marble table</label
+            >
+            <label
+              ><input type="radio" name="q4" value="Scandinavian" /> Cozy sofa &
+              throws</label
+            >
+          </div>
+
+          <button type="submit" class="btn btn-primary">See My Style</button>
+        </form>
+
+        <!-- Result -->
+        <div id="quizResult" class="quiz-result hidden"></div>
+      </section>
+      <section class="moodboard">
+        <h2>AI Moodboard Generator</h2>
+        <form id="moodForm">
+          <label for="room">Room Type:</label>
+          <input
+            type="text"
+            id="room"
+            placeholder="e.g. Living Room"
+            required
+          />
+
+          <label for="style">Preferred Style:</label>
+          <input
+            type="text"
+            id="style"
+            placeholder="e.g. Modern, Minimalist"
+            required
+          />
+
+          <button type="submit">Generate Moodboard</button>
+        </form>
+        <section class="estimator">
+    <h2>Interior Design Cost Estimator</h2>
+    <form id="costForm">
+      <label for="roomType">Room Type:</label>
+      <select id="roomType" required>
+        <option value="">-- Select --</option>
+        <option value="living">Living Room</option>
+        <option value="bedroom">Bedroom</option>
+        <option value="kitchen">Kitchen</option>
+        <option value="office">Office</option>
+      </select>
+
+      <label for="size">Room Size (sqft):</label>
+      <input type="number" id="size" placeholder="Enter size" required>
+
+      <label for="budget">Budget Preference:</label>
+      <select id="budget" required>
+        <option value="">-- Select --</option>
+        <option value="basic">Basic</option>
+        <option value="standard">Standard</option>
+        <option value="luxury">Luxury</option>
+      </select>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+       
+
+      <!-- Testimonials -->
+      <!-- <section class="section testimonials">
+        <div class="container">
+          <h2 class="section-title">What clients say</h2>
+          <div class="testi-grid">
+            <blockquote class="testi">
+              “Transformed our small flat into a calm, beautiful home.
+              Detail-oriented and fast.” <cite>— Maya R.</cite>
+            </blockquote>
+            <blockquote class="testi">
+              “Professional, great taste and excellent coordination with
+              contractors.” <cite>— Raj P.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section> -->
+      <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="carousel">
+          <div class="testimonial active">
+            <p>
+              "The interior design completely transformed my home. Elegant and
+              modern!"
+            </p>
+            <div class="stars">★★★★★</div>
+            <h4>- Sarah</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Amazing work! The team captured my vision perfectly."</p>
+            <div class="stars">★★★★☆</div>
+            <h4>- Michael</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Professional and creative. My living room looks like a dream
+              now."
+            </p>
+            <div class="stars">★★★★★</div>
+            <h4>- Alisha</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <h2 class="section-title">Get in touch</h2>
+            <p>Tell us about your project. We'll reply within 48 hours.</p>
+            <form
+              id="contactForm"
+              class="contact-form"
+              onsubmit="submitContact(event)"
+            >
+              <label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label>
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+              <label>
+                <textarea
+                  name="message"
+                  placeholder="Project details"
+                  rows="5"
+                  required
+                ></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+              <p class="form-note" id="formNote" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Studio</h3>
+            <p>Mysuru, Karnataka • Available for remote consultations</p>
+            <p><strong>Email:</strong> hello@WanderXstudio.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="virtual-tour">
+      <h2>Explore Our Designs in 360°</h2>
+      <iframe
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen
+        src="https://kuula.co/share/hbpNF?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+      >
+      </iframe>
+    </section>
+    <section class="virtual-tour">
+      <h2>Explore Our Designs in 360°</h2>
+      <iframe
+        width="100%"
+        height="500px"
+        frameborder="0"
+        allowfullscreen
+        src="https://kuula.co/share/h5Hpv?logo=0&info=1&fs=1&vr=0&sd=1&thumbs=1"
+      >
+      </iframe>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> WanderX — Interior Design</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Pinterest">PT</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

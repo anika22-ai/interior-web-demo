@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="style.css" />
+    <li>
+      <a href="wishlist.html"
+        ><i class="fa-solid fa-heart"></i> Wishlist (<span id="wishlist-count"
+          >0</span
+        >)</a
+      >
+    </li>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>My Wishlist ❤️</h1>
+    <div class="wishlist-container"></div>
+
+    <script>
+      let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+      let container = document.querySelector(".wishlist-container");
+
+      if (wishlist.length === 0) {
+        container.innerHTML = "<p>No favorites yet!</p>";
+      } else {
+        wishlist.forEach((item) => {
+          container.innerHTML += `
+          <div class="wishlist-card">
+            <img src="${item.img}" alt="${item.name}">
+            <h3>${item.name}</h3>
+            <button onclick="removeFromWishlist('${item.id}')">Remove ❌</button>
+          </div>
+        `;
+        });
+      }
+
+      function removeFromWishlist(id) {
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+        wishlist = wishlist.filter((item) => item.id !== id);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
